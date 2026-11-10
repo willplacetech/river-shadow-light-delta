@@ -131,11 +131,11 @@ function Navbar() {
 }
 
 function Hero() {
-  const hero = photo("/photos/pool-deck.jpg");
+  const hero = photo("/photos/pool-hero-cover.jpg");
   const thumbs = [
-    photo("/photos/room-garden.jpg"),
-    photo("/photos/kitchen-porch.jpg"),
+    photo("/photos/pool-hero-cover.jpg"),
     photo("/photos/facade-hills.jpg"),
+    photo("/photos/kitchen-porch.jpg"),
     photo("/photos/roses.jpg"),
   ];
 

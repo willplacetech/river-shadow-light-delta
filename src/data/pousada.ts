@@ -29,6 +29,13 @@ export type Photo = {
 
 export const PHOTOS: Photo[] = [
   {
+    src: "/photos/pool-hero-cover.jpg",
+    alt: "Vista da pousada com piscina, telhado de barro e serra ao fundo",
+    album: "piscina",
+    w: 1194,
+    h: 768,
+  },
+  {
     src: "/photos/pool-deck.jpg",
     alt: "Piscina com deque de madeira, espreguiçadeiras e guarda-sóis",
     album: "piscina",
