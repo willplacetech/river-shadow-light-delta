@@ -134,9 +134,9 @@ function Hero() {
   const hero = photo("/photos/pool-hero-cover.jpg");
   const thumbs = [
     photo("/photos/pool-hero-cover.jpg"),
+    photo("/photos/pool-loungers.jpg"),
+    photo("/photos/pool-portrait.jpg"),
     photo("/photos/facade-hills.jpg"),
-    photo("/photos/kitchen-porch.jpg"),
-    photo("/photos/roses.jpg"),
   ];
 
   return (
