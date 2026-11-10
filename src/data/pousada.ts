@@ -8,7 +8,7 @@ export const POUSADA = {
     "https://www.google.com/maps/place/Pousada+Recanto+da+Paz/@-22.5267135,-46.6318081,17z",
   checkin: "14h",
   checkout: "até 12h",
-  whatsappNumber: "",
+  whatsappNumber: "5519997633800",
 };
 
 export const OTA = {
