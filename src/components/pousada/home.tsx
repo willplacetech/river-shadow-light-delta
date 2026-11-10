@@ -131,12 +131,12 @@ function Navbar() {
 }
 
 function Hero() {
-  const hero = photo("/photos/pool-hero-cover.jpg");
+  const hero = photo("/photos/front-view-hero.jpg");
   const thumbs = [
-    photo("/photos/pool-hero-cover.jpg"),
-    photo("/photos/pool-loungers.jpg"),
-    photo("/photos/pool-portrait.jpg"),
+    photo("/photos/front-view-hero.jpg"),
     photo("/photos/facade-hills.jpg"),
+    photo("/photos/kitchen-porch.jpg"),
+    photo("/photos/roses.jpg"),
   ];
 
   return (
@@ -223,7 +223,7 @@ function Marquee() {
 }
 
 function About() {
-  const main = photo("/photos/facade-hills.jpg");
+  const main = photo("/photos/pool-deck.jpg");
   const pool = photo("/photos/pool-portrait.jpg");
   const linen = photo("/photos/room-linen.jpg");
 

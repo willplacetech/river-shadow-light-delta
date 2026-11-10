@@ -53,8 +53,8 @@ export function Gallery() {
               A Pousada, <em className="text-clay">quarto por quarto</em>
             </h2>
             <p className="max-w-sm text-sm leading-relaxed text-moss">
-              {items.length} {items.length === 1 ? "fotografia" : "fotografias"} — deslize para ver
-              cada acomodação, a piscina e o resto da pousada.
+              {items.length} {items.length === 1 ? "fotografia" : "fotografias"} — veja os quartos,
+              a piscina, o café da manhã e os outros ambientes da pousada.
             </p>
           </div>
         </Reveal>

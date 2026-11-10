@@ -17,7 +17,7 @@ export const OTA = {
     "https://www.booking.com/hotel/br/pousada-recanto-da-paz-lindoia-sp.pt-br.html",
 };
 
-export type Album = "piscina" | "quartos" | "casa" | "fachada";
+export type Album = "piscina" | "quartos" | "casa" | "fachada" | "cafe";
 
 export type Photo = {
   src: string;
@@ -29,9 +29,9 @@ export type Photo = {
 
 export const PHOTOS: Photo[] = [
   {
-    src: "/photos/pool-hero-cover.jpg",
-    alt: "Vista da pousada com piscina, telhado de barro e serra ao fundo",
-    album: "piscina",
+    src: "/photos/front-view-hero.jpg",
+    alt: "Vista frontal da pousada com telhado de barro, área de estacionamento e serra ao fundo",
+    album: "fachada",
     w: 1194,
     h: 768,
   },
@@ -234,9 +234,135 @@ export const PHOTOS: Photo[] = [
   {
     src: "/photos/breakfast.jpg",
     alt: "Sala de refeições com mesa posta",
-    album: "casa",
+    album: "cafe",
     w: 720,
     h: 1280,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-089.jpg",
+    alt: "Mesa posta na sala de refeições da pousada",
+    album: "cafe",
+    w: 1363,
+    h: 2048,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-092.jpg",
+    alt: "Salão de refeições com mesas e cadeiras",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-093.jpg",
+    alt: "Buffet de café da manhã com frutas e pães",
+    album: "cafe",
+    w: 1363,
+    h: 2048,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-094.jpg",
+    alt: "Pratos servidos com acompanhamentos no café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-098.jpg",
+    alt: "Pães, queijos e acompanhamentos do café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-099.jpg",
+    alt: "Seleção de pães e frios no buffet",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-101.jpg",
+    alt: "Queijos e acompanhamentos do buffet de café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-104.jpg",
+    alt: "Mesa de buffet com pães, frios e bebidas",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-109.jpg",
+    alt: "Buffet de café da manhã com pães e frios",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-110.jpg",
+    alt: "Bolos, pães e frios servidos no café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-111.jpg",
+    alt: "Pães e quitutes variados no buffet",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-112.jpg",
+    alt: "Pães de queijo servidos no café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-114.jpg",
+    alt: "Bolos variados no buffet do café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-119.jpg",
+    alt: "Frutas frescas servidas no café da manhã",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-121-web.jpg",
+    alt: "Frutas e opções variadas no buffet de café da manhã",
+    album: "cafe",
+    w: 2400,
+    h: 1597,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-124.jpg",
+    alt: "Balcão de café com garrafas térmicas e flores",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-129.jpg",
+    alt: "Buffet completo organizado na sala de refeições",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
+  },
+  {
+    src: "/photos/Cafe/Pousada%20Recanto%20da%20Paz-130.jpg",
+    alt: "Mesa de café da manhã com bolos, pães e bebidas",
+    album: "cafe",
+    w: 2048,
+    h: 1363,
   },
   {
     src: "/photos/garden-walk.jpg",
@@ -272,6 +398,7 @@ export const ALBUMS: { id: "todas" | Album; label: string }[] = [
   { id: "piscina", label: "Piscina" },
   { id: "quartos", label: "Quartos" },
   { id: "casa", label: "A Pousada" },
+  { id: "cafe", label: "Café da manhã" },
   { id: "fachada", label: "Fachada" },
 ];
 
