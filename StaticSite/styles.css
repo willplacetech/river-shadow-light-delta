@@ -1,0 +1,23 @@
+@import "../src/styles.css";
+@import "../src/fonts.css";
+@source "../src/components/pousada";
+@source "../src/data/pousada.ts";
+@source "./index.html";
+@source "./app.js";
+
+.field-error {
+  display: block;
+  min-height: 0;
+  color: var(--color-claydark);
+  font-size: 0.75rem;
+}
+
+.field-error:not(:empty) {
+  margin-top: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
