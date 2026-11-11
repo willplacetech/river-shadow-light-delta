@@ -1,5 +1,7 @@
 import { ALBUMS, PHOTOS, POUSADA, STAYS, buildWhatsAppUrl } from "../src/data/pousada.ts";
 
+const galleryPhotos = PHOTOS.filter((photo) => photo.src !== "/photos/breakfast.jpg");
+
 const iconPaths = {
   menu: '<path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/>',
   close: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
@@ -43,9 +45,9 @@ document.querySelectorAll("[data-icon]").forEach((element) => {
 });
 
 document.querySelector("#current-year").textContent = String(new Date().getFullYear());
-document.querySelector("#photo-count").textContent = `${PHOTOS.length} fotos`;
+document.querySelector("#photo-count").textContent = `${galleryPhotos.length} fotos`;
 document.querySelector("#gallery-description").textContent =
-  `${PHOTOS.filter((photo) => photo.album === "quartos").length} fotografias — veja os quartos, a piscina, o café da manhã e os outros ambientes da pousada.`;
+  `${galleryPhotos.filter((photo) => photo.album === "quartos").length} fotografias — veja os quartos, a piscina, o café da manhã e os outros ambientes da pousada.`;
 document.querySelectorAll("[data-pousada-address]").forEach((element) => {
   element.textContent = POUSADA.address;
 });
@@ -177,8 +179,8 @@ let carouselTimer;
 
 function filteredPhotos() {
   return activeAlbum === "todas"
-    ? PHOTOS
-    : PHOTOS.filter((photo) => photo.album === activeAlbum);
+    ? galleryPhotos
+    : galleryPhotos.filter((photo) => photo.album === activeAlbum);
 }
 
 function updateCarousel() {
